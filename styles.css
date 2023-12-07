@@ -237,3 +237,6 @@ body {
   padding-bottom: 90px;
   border-bottom: 3px dotted #eee;
 }
+.explore-left-content{
+  max-width: 600px;
+}
