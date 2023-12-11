@@ -12,6 +12,13 @@ body {
 .header{
   min-height: 80px;
   position: fixed;
+  width: 100%;
+}
+.active{
+  color: #aaa;
+}
+.menu:hover{
+  color: #aaa;
 }
 .logo{
   padding-bottom: 10px;
@@ -31,8 +38,15 @@ body {
   font-size: 16px;
   padding: 0 15px;
 }
+.menu a{
+  padding: 0;
+  color: #2a2a2a;
+}
+a:hover{
+  color: #aaa !important;
+}
 .main-banner {
-  padding-top: 80px;
+  padding-top: 180px;
   padding-bottom: 90px;
   border-bottom: 3px dotted #eee;
 }
@@ -75,6 +89,9 @@ body {
   margin-bottom: 30px;
   display: block;
 }
+.right-content{
+  margin-left: 20px;
+}
 .main-btn {
   font-size: 13px;
   color: #fff;
@@ -110,8 +127,8 @@ body {
 }
 .hover-content {
   position: absolute;
-  top: 30px;
-  left: 25px;
+  top: 15px;
+  left: 10px;
   background-color: rgba(42, 42, 42, 0.99);
   text-align: center;
   visibility: hidden;
@@ -127,6 +144,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 15px;
+  padding-top: 15px;
 }
 .hover-inner-para{
   color: #fff;
