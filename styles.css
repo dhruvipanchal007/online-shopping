@@ -13,6 +13,7 @@ body {
   min-height: 80px;
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 .active{
   color: #aaa;
@@ -49,6 +50,8 @@ a:hover{
   padding-top: 180px;
   padding-bottom: 90px;
   border-bottom: 3px dotted #eee;
+  position: relative;
+  z-index: 999;
 }
 .container-fluid {
   display: flex;
@@ -536,4 +539,59 @@ border: none;
 }
 .effect-text i{
   padding-left: 20px;
+}
+.dropdown-menu{
+  background-color: #f7f7f7;
+  color: #2a2a2a;
+  padding-left: 20px;
+  height: 40px;
+  line-height: 40px;
+  list-style: none;
+  font-size: 13px;
+  display: none;
+}
+.dropdown-menu a{
+  color: #2a2a2a;
+  text-decoration: none;
+  font-size: 13px;
+  border-bottom: 1px solid #eee;
+}
+a{
+  color: #2a2a2a;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 15px;
+
+}
+li a i{
+  color: #2a2a2a;
+
+}
+ul{
+  list-style: none;
+}
+.sub-menu{
+  display: none;
+}
+.menubar ul li:hover .sub-menu{
+  display: block;
+  position: absolute;
+  background-color: #f7f7f7;
+  margin-top: 10px;
+}
+.sub-menu-list{
+  padding: 10px;
+}
+.list a{
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  font-weight: 200;
+ 
+}
+.list{
+  padding: 5px 10px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0;
 }
