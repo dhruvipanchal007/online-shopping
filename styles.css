@@ -9,6 +9,7 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow-y: scroll;
   margin: 0;
+  overflow-x: hidden;
 }
 .header{
   min-height: 80px;
@@ -47,6 +48,7 @@ body {
 a:hover{
   color: #aaa !important;
 }
+
 /* #common CSS */
 .container {
   padding-left: 15px;
@@ -118,9 +120,7 @@ a:hover{
 }
 
 
-@media (max-width:750px & min-width:400px){
-  
-}
+
 
 /* #main-banner  section*/
 .main-banner {
@@ -134,20 +134,21 @@ a:hover{
   display: flex;
 }
 .left-content {
-  max-width: 700px;
-  width: 100%;
+  width: 700px;
   padding: 0 15px;
   position: relative;
 }
 .left-img {
   width: 100%;
-  height: 550px;
+  height: 520px;
 }
-.right-img {
-  max-width: 270px;
+.right-img{
   width: 100%;
-  padding: 15px;
-  min-height: 250px;
+  height: 250px;
+}
+.right-content{
+  margin-left: 10px;
+  margin-right: 20px;
 }
 .inner-text {
   position: absolute;
@@ -169,9 +170,7 @@ a:hover{
   margin-bottom: 30px;
   display: block;
 }
-.right-content{
-  margin-left: 20px;
-}
+
 .main-btn {
   font-size: 13px;
   color: #fff;
@@ -191,8 +190,11 @@ a:hover{
   width: 100%;
 }
 .row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 10px;
+  width: 100%;
 }
 .inner-right-heading {
   color: #fff;
@@ -207,13 +209,13 @@ a:hover{
 }
 .hover-content {
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 10px;
+  left: 15px;
   background-color: rgba(42, 42, 42, 0.99);
   text-align: center;
   visibility: hidden;
   transition: all ease 0.2s;
-  width: 250px;
+  width: 90%;
   height: 230px;
 }
 .right-text:hover .hover-content{
@@ -244,7 +246,21 @@ a:hover{
   background-color: #fff;
   color: #2a2a2a;
 }
-
+@media (max-width:1000px){
+  .container-fluid{
+    flex-wrap: wrap;
+  }
+  .left-content{
+    width: 100%;
+  }
+  .row{
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .right-img{
+    width: 100%;
+  }
+}
 /* #men Section */
 .men {
   padding-top: 80px;
