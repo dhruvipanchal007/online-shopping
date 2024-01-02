@@ -11,11 +11,60 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+/* Header css */
 .header{
-  min-height: 80px;
   position: fixed;
-  width: 100%;
+ min-height: 80px;
+  background-color: #fff;
+  border-bottom: 3px dotted #eee;
   z-index: 1000;
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  text-align:center;
+  
+}
+
+
+.navbar{
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-left: auto;
+  margin-bottom: 0;
+  padding-right: 98px;
+}
+
+.logo{
+  font-size: 24px;
+  width: 195px;
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 98px;
+}
+#check{
+  display: none;
+
+}
+#menu-icon{
+ display: none;
+ font-size: 30px;
+}
+#close-icon{
+  display: none;
+  font-size: 40px;
+}
+.menu{
+  padding: 0 15px;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #2a2a2a;
+}
+.menu i{
+  font-size: 10px;
+  padding-left: 8px;
 }
 .active{
   color: #aaa;
@@ -23,32 +72,85 @@ body {
 .menu:hover{
   color: #aaa;
 }
-.logo{
-  padding-bottom: 10px;
+.dropdown{
+  width: 200px;
+  position: absolute;
+  right: 15%;
+  display: none;
 }
-.navbar {
-  display: flex;
-  padding: 30px 98px 0 98px;
-  border-bottom: 3px dotted #eee;
+.dropdown li{
+  display: block;
+  background-color: #f7f7f7;
+  border-top: 1px solid #eee;
+  width: 100%;
 }
-.nav {
-  display: flex;
-  list-style: none;
-  margin-left: auto;
+.navbar li:hover .dropdown{
+  display: block;
+
 }
-.menu {
-  font-weight: 600;
-  font-size: 16px;
-  padding: 0 15px;
+.dropdown li:hover{
+  background-color: #fff;
+  color: #aaa!important;
 }
-.menu a{
-  padding: 0;
-  color: #2a2a2a;
-}
-a:hover{
-  color: #aaa !important;
+.dropdown li a{
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 40px;
 }
 
+#checkbtn{
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  font-size: 30px;
+}
+@media (max-width:890px){
+  #menu-icon{
+    display: block;
+  }
+  .navbar{
+    position: absolute;
+    top: 100px;
+    height: 0;
+    background-color:#f7f7f7;
+    display: block;
+    width: 60%;
+    text-align: center;
+    margin-left: 130px;
+    line-height: 50px;
+    padding: 0;
+    overflow: hidden;
+    transition: all ease 0.3s;
+  }
+  .navbar li{
+    border-top: 1px solid #eee;
+    width: 100%;
+  }
+  .menu{
+    font-size: 14px;
+    height: 50px;
+  }
+  .navbar li:hover {
+    background-color: #eee;
+  }
+  #check:checked ~ #checkbtn #menu-icon{
+    display: none;
+  }
+  #check:checked ~ #checkbtn #close-icon{
+    display: block;
+
+  }
+  #check:checked ~  .navbar{
+    height: 350px;
+  }
+  
+}
+@media (max-width:545px){
+  .navbar{
+    width: 90%;
+    margin-left: 0;
+  }
+}
 /* #common CSS */
 .container {
   padding-left: 15px;
