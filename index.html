@@ -23,17 +23,18 @@
     />
     
     
-    <!-- <link
+   
+
+    <!-- <script type= <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
-    /> -->
-
-    <script type="module" src="script.js"></script>
+    />"module" src="script.js"></script> -->
   </head>
   <body>
     <div class="header">
+    
       <img class="logo" src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/logo.png">
       <input type="checkbox" name="" id="check">
       <label for="check" id="checkbtn">
@@ -54,12 +55,12 @@
 
         </ul>
         </li>
-        <li><a href="#" class="menu">Features</a>
-          <ul class="dropdown">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Single Product</a></li>
-            <li><a href="#">Contact us</a></li>
+        <li><a href="#" class="menu">Features<i class="bi-chevron-down"></i></a>
+          <ul class="dropdown right">
+            <li><a href="#">Feature Page 1</a></li>
+            <li><a href="#">Feature Page 2</a></li>
+            <li><a href="#">Feature Page 3</a></li>
+            <li><a href="#">Feature Page 4</a></li>
   
           </ul>
         </li>
@@ -69,8 +70,6 @@
       </ul>
 
     </div>
-    
-   
     <div class="main-banner">
       <div class="container-fluid">
         <div class="left-content">
@@ -428,7 +427,7 @@
     </section>
     <section class="explore">
       <div class="container">
-        <div class="d-flex">
+        <div class="d-grid">
         <div class="explore-left-content">
         <h1 class="explore-heading">Explore Our Products</h1>
         <p class="explore-para">You are allowed to use this HexaShop HTML CSS template. You can feel free to modify or edit this layout. You can convert this template as any kind of ecommerce CMS theme as you wish.
@@ -451,10 +450,10 @@
             <span class="leather-text">Latest Collection</span>
           </div>
           <div class="m-left">
-          <img src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/explore-image-01.jpg">
+          <img class="explore-img" src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/explore-image-01.jpg">
           </div>
           <div class="m-left">
-                 <img src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/explore-image-02.jpg">
+                 <img class="explore-img" src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/explore-image-02.jpg">
                  </div>
              <div class="leather m-left">
               <h1 class="leather-heading">Different Types</h1>
@@ -480,44 +479,44 @@
             themes.
           </span>
         </div>
-        <div class="d-flex row-images">
+        <div class="flex row-images">
           <div class="hover-effect">
-            <img src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/instagram-01.jpg">
+            <img  class="social-pic"src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/instagram-01.jpg">
             <div class="effect-text">
             <h4>Fashion</h4>
             <i class="bi-instagram"></i>
             </div>
         </div>
         <div class="hover-effect">
-        <img src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/instagram-02.jpg">
+        <img class="social-pic" src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/instagram-02.jpg">
         <div class="effect-text">
           <h4>Fashion</h4>
           <i class="bi-instagram"></i>
           </div>
         </div>
         <div class="hover-effect">
-        <img src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/instagram-03.jpg">
+        <img  class="social-pic" src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/instagram-03.jpg">
         <div class="effect-text">
           <h4>Fashion</h4>
           <i class="bi-instagram"></i>
           </div>
         </div>
         <div class="hover-effect">
-        <img src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/instagram-04.jpg">
+        <img class="social-pic" src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/instagram-04.jpg">
         <div class="effect-text">
           <h4>Fashion</h4>
           <i class="bi-instagram"></i>
           </div>
           </div>
           <div class="hover-effect">
-        <img src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/instagram-05.jpg">
+        <img class="social-pic" src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/instagram-05.jpg">
         <div class="effect-text">
           <h4>Fashion</h4>
           <i class="bi-instagram"></i>
           </div>
           </div>
           <div class="hover-effect">
-        <img src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/instagram-06.jpg">
+        <img class="social-pic" src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/instagram-06.jpg">
         <div class="effect-text">
           <h4>Fashion</h4>
           <i class="bi-instagram"></i>
@@ -529,8 +528,8 @@
 
     </section>
     <section class="extra-information">
-      <div class="margin-left">
-        <div class="d-flex">
+      <div class="container">
+        <div class="grid">
         <div class="left-side">
         <div class="section-text width">
           <h2 class="section-heading">By Subscribing To Our Newsletter You Can Get 30% Off</h2>
@@ -553,7 +552,7 @@
         
         </div>
         </div>
-        <div class="basic-information d-flex">
+        <div class="basic-information">
           <div class="basic-left">
           <h1 class="information-heading">Store Location:</h1>
           <p class="information-text">Sunny Isles Beach, FL 33160, United States</p>
@@ -583,14 +582,14 @@
     </section>
     <section class="footer">
       <div class="container">
-        <div class="d-flex p-top">
+        <div class=" d-flex p-top">
         <div class="office-info">
         <img src="https://templatemo.com/templates/templatemo_571_hexashop/assets/images/white-logo.png">
         <p class="inner-info">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</p>
         <p class="inner-info">hexashop@company.com</p>
         <p class="inner-info">010-020-0340</p>
         </div>
-        <div class="shopping-categories">
+        <div class="shopping-categories padding">
           <h4 class="list-heading">Shopping& categories</h4>
           <ul>
             <li class="list-footer">Men's Shopping</li>
@@ -599,7 +598,7 @@
           </ul>
 
         </div>
-        <div class="links">
+        <div class="links padding">
           <h4 class="list-heading">Useful Links</h4>
           <ul>
             <li class="list-footer">Home</li>
@@ -609,7 +608,7 @@
           </ul>
 
         </div>
-        <div class="help">
+        <div class="help padding">
           <h4 class="list-heading">Help & Information</h4>
           <ul>
             <li class="list-footer">Help</li>
