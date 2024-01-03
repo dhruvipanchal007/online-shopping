@@ -126,7 +126,7 @@ body {
 
   .navbar {
     position: absolute;
-    top: 100px;
+    top: 80px;
     height: 0;
     background-color: #f7f7f7;
     display: block;
@@ -268,32 +268,34 @@ body {
 }
 
 .container-fluid {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .left-content {
-  width: 100%;
   padding: 0 15px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .left-img {
   width: 100%;
-  height: 90%;
+  height: 100%;
 }
 
 .right-img {
-  width: 270px;
-  height: 250px;
+  width:100%;
+  height: 100%;
 }
 
 .right-content {
 
-  margin-left: 10px;
-  margin-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100%;
 }
 
 .inner-text {
@@ -342,11 +344,10 @@ body {
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  column-gap: 30px;
-  row-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
 
 }
 
@@ -416,6 +417,7 @@ body {
     text-align: center;
 
   }
+
 }
 
 
@@ -423,29 +425,12 @@ body {
 
 @media (max-width:1000px) {
   .container-fluid {
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
   }
-
-  .left-content {
-    width: 100%;
-  }
-
-  .right-content {
-    width: 100%;
-  }
-
-  .right-text {
-    width: 100%;
-  }
-
-  .right-img {
-    width: 100%;
-    height: 100%;
-  }
-
- 
-
-
+.row{
+  grid-template-columns: 1fr;
+}
+  
 }
 
 /* #men Section */
